@@ -15,21 +15,21 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
     <!-- fontawesome -->
-    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/all.min.css') }}">
     <!-- bootstrap -->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">
     <!-- owl carousel -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.css') }}">
     <!-- magnific popup -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
     <!-- animate css -->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
     <!-- mean menu css -->
-    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/meanmenu.min.css') }}">
     <!-- main style -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     <!-- responsive -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
 
 </head>
 
@@ -54,23 +54,27 @@
                     <div class="main-menu-wrap">
                         <!-- logo -->
                         <div class="site-logo">
-                            <a href="index.html">
-                                <img src="assets/img/logo.png" alt="">
+                            <a href="/">
+                                <img src="{{ asset('assets/img/logo.png') }}" alt="">
                             </a>
                         </div>
                         <!-- logo -->
 
                         <!-- menu start -->
-                        <nav class="main-menu">
+                        <nav class="main-menu" dir="rtl">
                             <ul>
-                                <li class="current-list-item"><a href="#">Home</a>
+                                <li class="current-list-item"><a href="/">الرئيسية</a>
                                     <ul class="sub-menu">
                                         <li><a href="index.html">Static Home</a></li>
                                         <li><a href="/">Slider Home</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="#">Pages</a>
+                                <li><a href="/products">المنتجات</a></li>
+
+                                <li><a href="/sections">الاقسام</a></li>
+                                <li><a href="about.html">من نحن</a></li>
+
+                                <li><a href="#">الصفحات</a>
                                     <ul class="sub-menu">
                                         <li><a href="404.html">404 page</a></li>
                                         <li><a href="about.html">About</a></li>
@@ -81,21 +85,7 @@
                                         <li><a href="shop.html">Shop</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="news.html">News</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="news.html">News</a></li>
-                                        <li><a href="single-news.html">Single News</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="/products">Shop</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="/products">Shop</a></li>
-                                        <li><a href="checkout.html">Check Out</a></li>
-                                        <li><a href="single-product.html">Single Product</a></li>
-                                        <li><a href="cart.html">Cart</a></li>
-                                    </ul>
-                                </li>
+
                                 <li>
                                     <div class="header-icons">
                                         <a class="shopping-cart" href="cart.html"><i
@@ -275,25 +265,25 @@
     <!-- end copyright -->
 
     <!-- jquery -->
-    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <script src="{{ asset('assets/js/jquery-1.11.3.min.js') }}"></script>
     <!-- bootstrap -->
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
     <!-- count down -->
-    <script src="assets/js/jquery.countdown.js"></script>
+    <script src="{{ asset('assets/js/jquery.countdown.js') }}"></script>
     <!-- isotope -->
-    <script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
+    <script src="{{ asset('assets/js/jquery.isotope-3.0.6.min.js') }}"></script>
     <!-- waypoints -->
-    <script src="assets/js/waypoints.js"></script>
+    <script src="{{ asset('assets/js/waypoints.js') }}"></script>
     <!-- owl carousel -->
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
     <!-- magnific popup -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
     <!-- mean menu -->
-    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="{{ asset('assets/js/jquery.meanmenu.min.js') }}"></script>
     <!-- sticker js -->
-    <script src="assets/js/sticker.js"></script>
+    <script src="{{ asset('assets/js/sticker.js') }}"></script>
     <!-- main js -->
-    <script src="assets/js/main.js"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 
 </body>
 

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\SectionsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $sections=DB::table('sections')->get();
+    return view('welcome',compact('sections'));
 });
-Route::get('products', function () {
-    return view('products');
-});
+Route::resource('sections',SectionsController::class);
+Route::resource('products',ProductsController::class);
