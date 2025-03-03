@@ -14,7 +14,8 @@ class SectionsController extends Controller
     public function index()
     {
         $sections = sections::all();
-        return view('sections.show_sections', compact('sections'));
+        $products=products::all();
+        return view('sections.show_sections', compact('sections','products'));
     }
 
     /**
