@@ -8,7 +8,7 @@ This is a feature-rich e-commerce platform built using Laravel. It provides a se
 - Product listing & categories
 - Shopping cart & checkout process
 - Order management
-- Payment integration (if applicable)
+- Payment integration 
 - Responsive design with HTML, CSS, and JavaScript
 - AJAX-based interactions for a smooth user experience
 - REST API endpoints for integration
